@@ -26,9 +26,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
-	<s:bean name="user">
-		<s:property value="username" />
-	</s:bean>
-	,欢迎你!
+	<s:property value="user.userName" />,欢迎你!<br>
+	<%Date date = new Date();
+	out.print(date);
+	%>
+	<br>
+	<a href="<%=basePath%>/addUser.jsp">Click Me To Add User</a>
+
+	
 </body>
 </html>

@@ -25,11 +25,6 @@ public class User {
 	/**
 	 * 用户id
 	 */
-	@Id
-	@Column(name = "userId")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-//	@GenericGenerator(strategy = GenerationType.IDENTITY)
-//	@GenericGenerator(name = "generator", strategy = "increment") 
 	private int userId;
 	
 	/**
@@ -44,7 +39,13 @@ public class User {
 	@Column(name = "passWord", length = 50)
 	private String passWord;
 
-	
+	@Id
+	@Column(name = "userId")
+//	@GenericGenerator(name ="generator", strategy = "identity") 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(generator = "generator") 
+//	@GenericGenerator(strategy = GenerationType.IDENTITY) 
+//	@GenericGenerator(name ="generator", strategy = "increment")
 	public int getUserId() {
 		return userId;
 	}

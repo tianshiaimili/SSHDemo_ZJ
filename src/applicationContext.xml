@@ -44,7 +44,7 @@
 					org.hibernate.dialect.MySQLDialect
 				</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<!-- 可以自动创建数据库表(create),不创建(none) -->
+				<!-- 可以自动创建数据库表(create),不创建(none)  update -->
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>

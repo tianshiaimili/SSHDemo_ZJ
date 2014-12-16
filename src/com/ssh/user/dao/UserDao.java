@@ -15,7 +15,8 @@ import com.ssh.user.model.User;
  * @version        
  * */
 public interface UserDao {
-	public void addUser(User user);
+//	public void addUser(User user);
+	public boolean addUser(User user);
 
 	public void delUser(int userId);
 

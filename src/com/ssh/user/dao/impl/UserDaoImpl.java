@@ -26,16 +26,19 @@ import com.ssh.util.MyHibernateDaoSupport;
 @Repository("userDao")
 public class UserDaoImpl extends MyHibernateDaoSupport implements UserDao{
 
-	public void addUser(User user)  {
+	public boolean addUser(User user)  {
 		Session session = this.getSession(true);
 		Transaction tc = (Transaction) session.beginTransaction();
 		session.save(user);
+//		session.saveOrUpdate(arg0);
 		try {
 			tc.commit();
 		} catch (Exception e) {
 			e.printStackTrace();
+			return false;
 		} 
 		session.close();
+		return true;
 	}
 
 	public void delUser(int userId) {
