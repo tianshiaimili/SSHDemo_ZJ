@@ -1,1 +1,3 @@
-ÕâÊÇÒ»¸öSSH ×¢½âµÄdemo
+ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½SSH ×¢ï¿½ï¿½ï¿½demo
+ä¸€ä¸ªssh ä½¿ç”¨æ³¨è§£çš„ demo
+https://github.com/tianshiaimili/SSHDemo_ZJ.git
